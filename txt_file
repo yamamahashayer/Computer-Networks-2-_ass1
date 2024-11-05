@@ -41,7 +41,7 @@ Solution of Part2.1:
 #deny ip 172.16.10.0   0.0.0.255   172.16.30.0  0.0.0.255
 #deny ip 172.16.50.0  0.0.0.255   172.16.30.0  0.0.0.255  // Deny any other traffic from Administration or Engineering to Sales
 #interface e0 
-#ip access_group out.
+#ip access_group in.
 
 
 
@@ -60,7 +60,7 @@ Solution of Part2.1:
 #deny ip 172.16.10.0  0.0.0.255  172.16.30.0   0.0.0.255//Deny any other traffic from Administration to Sales
 #permit ip 172.16.10.0 0.0.0.255 172.16.50.0 0.0.0.255 //Allow all traffic from Administration to Engineering
 #interface e0
-#ip access_group out 
+#ip access_group in 
 
 
 
@@ -76,7 +76,7 @@ Solution of Part2.1:
 # deny ip 172.16.50.0    0.0.0.255     172.16.30.0    0.0.0.255 //Deny any other traffic from Administration or Engineering to Sales
 #permit ip 172.16.50.0   0.0.0.255    172.16.10.0   0.0.0.255 //Allow all traffic from Engineering to Administration
 #interface e0
-#ip access_group out 
+#ip access_group in 
 
 
 
