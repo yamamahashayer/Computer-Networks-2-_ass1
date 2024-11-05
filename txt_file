@@ -5,7 +5,7 @@ Solution of Part1:
 #access-list 1 deny   172.16.10.40      0.0.0.1         //here I deny 40 and 41
 #access-list 1 permit 172.16.10.32    0.0.0.15       //here I permit 32-47
 #access-list 1 deny   172.16.10.2        0.0.0.1        //here I deny 2 and 3 
-#access-list 1 deny   172.16.30.192     0.0.0.15     //here I deny 172.16.30.192
+#access-list 1 deny   172.16.30.192     0.0.0.0     //here I deny 172.16.30.192
 #access-list 10 permit  any    // here I permit all remaining addresses from  Administration and Sales to Engineering.
 #interface S0
 #ip access_group1 in .
