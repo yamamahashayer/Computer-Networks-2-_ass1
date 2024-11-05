@@ -8,7 +8,7 @@ Solution of Part1:
 #access-list 1 deny   172.16.30.192     0.0.0.0     //here I deny 172.16.30.192
 #access-list 10 permit  any    // here I permit all remaining addresses from  Administration and Sales to Engineering.
 #interface S0
-#ip access_group1 in .
+#ip access_group1 out .
 
 
 
